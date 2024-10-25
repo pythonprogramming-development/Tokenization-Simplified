@@ -1,9 +1,18 @@
 # Virtual environment
 venv/
+env/
+.venv/
+.env/
 
 # Python cache files
 __pycache__/
 *.py[cod]
+
+# Note: If venv/ is still not being ignored, ensure:
+# 1. This .gitignore file is in the root directory of your project
+# 2. You haven't already committed the venv/ directory to your repository
+# 3. The venv/ directory name exactly matches what's listed here
+# 4. You've run `git rm -r --cached .` to clear git's cache if needed
 
 # Logs
 *.log

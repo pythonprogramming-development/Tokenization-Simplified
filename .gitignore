@@ -1,1 +1,16 @@
-/venv
+# Virtual environment
+/venv/
+
+# Note: Make sure there are no spaces before or after the path
+# If the above doesn't work, try:
+# venv/
+# or
+# *venv/
+
+# Ensure this file is saved with LF (Unix) line endings, not CRLF
+# Check if the .gitignore file is actually being used by Git
+# Run: git check-ignore -v venv
+# If it's still not working, try:
+# git rm -r --cached .
+# git add .
+# git commit -m "Fixed .gitignore"

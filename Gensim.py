@@ -1,5 +1,9 @@
 # While Gensim is primarily used for topic modeling and word embeddings, it also provides basic tokenization tools.
 
+# The comment `# Simple and fast, often used in combination with other tokenization libraries` is
+# providing a brief description or summary of the purpose and characteristics of the tokenization
+# tools provided by Gensim. It highlights that Gensim's tokenization tools are simple, fast, and
+# commonly used alongside other tokenization libraries for various natural language processing tasks.
 # Simple and fast, often used in combination with other tokenization libraries.
 
 from gensim.utils import simple_preprocess

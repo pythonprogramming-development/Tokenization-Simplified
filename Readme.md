@@ -135,7 +135,7 @@ tokens = tokenizer.tokenize(text)
 Tokenization is a crucial step in natural language processing (NLP) that involves breaking down text into smaller units, called tokens. These tokens can be words, phrases, or even characters. This process allows machine learning models to understand and manipulate text data more effectively. By converting text into a structured format, tokenization enables models to learn patterns, understand context, and generate coherent responses.
 
 **Roadmap to Proficiency in AI:**
-
+AI -> ML -> NLP -> DL -> GEN AI -> LLM
 1. **Fundamentals of Programming:**
    - Learn Python or R for data manipulation and analysis.
 

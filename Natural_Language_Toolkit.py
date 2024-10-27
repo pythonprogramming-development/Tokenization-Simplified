@@ -1,5 +1,6 @@
 import nltk
 from nltk.tokenize import TreebankWordTokenizer, WordPunctTokenizer, RegexpTokenizer, TweetTokenizer, PunktSentenceTokenizer, WhitespaceTokenizer
+from collections import Counter
 
 # Sample text for tokenization
 text = "He said, 'Hello!' #greeting @someone 😊 How are you?"
@@ -58,3 +59,15 @@ displayTokenizationResults("SentTokenizer (Punkt)", sentences)
 whitespace_tokenizer = WhitespaceTokenizer()
 whitespace_tokens = whitespace_tokenizer.tokenize(text)
 displayTokenizationResults("WhitespaceTokenizer", whitespace_tokens)
+
+def displayTokenFrequency(tokens):
+    """
+    Displays the frequency of each token in a formatted manner.
+    """
+    token_counts = Counter(tokens)
+    print("\nToken Frequencies:")
+    print("-------------------")
+    for token, count in token_counts.items():
+        print(f"{token}: {count}")
+
+displayTokenFrequency(treebank_tokens)

@@ -3,7 +3,7 @@ from nltk.tokenize import TreebankWordTokenizer, WordPunctTokenizer, RegexpToken
 from collections import Counter
 
 # Sample text for tokenization
-text = "He said, 'Hello!' #greeting @someone 😊 How are you?"
+text = "He  He said, 'Hello!' #greeting @someone 😊 How are you?"
 
 def displayTokenizationResults(tokenizer_name, tokens):
     """
@@ -68,6 +68,18 @@ def displayTokenFrequency(tokens):
     print("\nToken Frequencies:")
     print("-------------------")
     for token, count in token_counts.items():
-        print(f"{token}: {count}")
+        print(f"{token}: {count}") # Data for visualization
+    tokens, counts = zip(*token_counts.items())
+
+    # Plotting the token frequency bar chart
+    plt.figure(figsize=(10, 6))
+    sns.barplot(x=list(tokens), y=list(counts), palette="viridis")
+    plt.xlabel('Tokens')
+    plt.ylabel('Frequency')
+    plt.title('Token Frequencies')
+    plt.xticks(rotation=45)
+    plt.show()
+
+# Display token frequencies and visualize for Treebank tokenizer
 
 displayTokenFrequency(treebank_tokens)
